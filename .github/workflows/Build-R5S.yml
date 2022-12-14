@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build K2P
+name: Build R5S
 
 on:
   repository_dispatch:
@@ -20,12 +20,12 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
-  REPO_BRANCH: lede-17.01
+  REPO_URL: https://github.com/coolsnowwolf/lede.git
+  REPO_BRANCH: 20221001
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: K2P.config
-  DIY_P1_SH: devices/K2P/diy-part1.sh
-  DIY_P2_SH: devices/K2P/diy-part2.sh
+  CONFIG_FILE: R5S.config
+  DIY_P1_SH: devices/R5S/diy-part1.sh
+  DIY_P2_SH: devices/R5S/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
